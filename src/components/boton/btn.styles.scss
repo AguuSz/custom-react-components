@@ -1,0 +1,105 @@
+.btn {
+    color: white;
+    background-color: #c72c41;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+    transition: all .3s ease;
+    margin: 20px 5px 20px 5px;
+
+    &.primary {
+        background-color: #037BFF;
+    }
+    &.primary:hover {
+        background-color: rgb(0, 80, 165);
+    }
+
+    &.secondary {
+        background-color: rgb(101, 111, 119);
+    }
+    &.secondary:hover {
+        background-color: rgb(69, 75, 80);
+    }
+    
+    &.success {
+        background-color: #3f9c31;
+    }
+    &.success:hover {
+        background-color: #307725;
+        
+    }
+
+    &.danger {
+        background-color: rgb(219, 56, 35);
+    }
+    &.danger:hover {
+        background-color: rgb(192, 50, 31);
+    }
+
+    &.warning {
+        background-color: #FEC106;
+        color: black;
+    }
+    &.warning:hover {
+        background-color: rgb(190, 143, 0);
+        
+    }
+    &.info {
+        background-color: rgb(50, 161, 184);
+    }
+    &.info:hover {
+        background-color: rgb(42, 143, 163);
+    }
+
+    &.simple {
+        border: 2px solid black;
+        color: black;
+        background-color: white;
+    }
+    &.simple:hover {
+        color: #5507ad;
+        background-color: white;
+    }
+
+    &.slash {
+        border: 1px solid;
+        overflow: hidden;
+        position: relative;
+     
+        &:after {
+          background: white;
+          content: "";
+          height: 155px;
+          left: -75px;
+          opacity: .2;
+          position: absolute;
+          top: -50px;
+          transform: rotate(35deg);
+          transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+          width: 50px;
+          z-index: -10;
+        }
+      }
+      
+    &.slash:hover {
+        &:after {
+            left: 120%;
+            transition: all 700ms cubic-bezier(0.19, 1, 0.22, 1);
+        }
+    }
+
+    &.grow {
+        &.grow:hover {
+            transform: scale(1.1);
+        }
+    }
+
+
+}
+
+.btn:hover {
+    transform: scale(1);
+    cursor: pointer;
+
+}   

@@ -1,0 +1,50 @@
+$fondo-carta: #1C1E45;
+$borde-carta: #2778F7;
+$color-texto: #000000;
+
+.carta {
+    margin: 20px;
+    border: 2px solid $borde-carta;
+    border-radius: 10px;
+    width: 300px;
+    height: 100%;
+    background-color: $fondo-carta;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+
+    .img {
+        width: 100%;
+        height: 60%;
+        border-radius: 5px;
+    }
+
+    .texto {
+        padding: 30px;
+        height: 40%;
+        .p {
+            display: block;
+            padding: 10px;
+            height: auto;
+        }
+    }
+
+    &.carta-material {
+        .texto {
+            color: $color-texto;
+        }
+        background-color: white;
+        border: none;
+    }
+
+    &.round-img {
+        .img {
+            padding: 15px 0 0 0 ;
+            max-width: 100%;
+            border-radius: 50%;
+            height: auto;
+        }
+    }
+}
